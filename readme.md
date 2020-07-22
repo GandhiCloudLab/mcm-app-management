@@ -1,10 +1,10 @@
-# MultiCloud Management - App Management and Sample apps
+# MCM - App Management and Sample apps for Channel types Namespace, Helm and Git
 
 This document explains about MCM application management and its resources.
 
-Also it cotains sample application deployment scripts for the Channel types NameSpace, Helm and Git Repository.
+Also it contains sample application deployment scripts for the Channel types NameSpace, Helm and Git Repository.
 
-The content is maded based on the Multicloud Management Version 1.3.x
+The content is made based on the Multicloud Management Version 1.3.x
 
 ## Overview
 
@@ -17,7 +17,7 @@ The custom resources are
 - PlacementRule
 - Subscription
 
-Using this resources you can define your application and install it in MCM Hub clusters. Based on the placment rules, it will be propagated to appropriate managed cluster. Anytime, if you want to move your applicaitons from one managed cluster to another managed cluster can be done very easily by just changing the placement rule.
+Using this resources you can define your application and install it in MCM Hub clusters. Based on the placement rules, it will be propagated to appropriate managed cluster. Anytime, if you want to move your applicaitons from one managed cluster to another managed cluster can be done very easily by just changing the placement rule.
 
 <img src="images/01-cluster.png">
 
@@ -55,7 +55,7 @@ Define the target clusters where deployables can be deployed
 
 Sets of definitions that identify deployables within channels by using annotations, labels, and versions.
 Subscription operator can monitor the channel for new or updated deployables.
-Then, the operator can download the deployables  directly from the source location (Helm repository, GitHub epository, object store, or namespace) to the target managed clusters
+Then, the operator can download the deployables  directly from the source location (Helm repository, GitHub repository, object store, or namespace) to the target managed clusters
 
 ### 5. Application
 
@@ -86,7 +86,8 @@ For grouping application components such as channel, subscription, placement rul
 <img src="images/31-app-subscription.png">
 
 - Based on the Placement Rule the Subscription is propagated to Cluster 2.
-- Propagated Subscription from cluster 2, pull the Deployments, PODS and Secrets from the Channel and  deploy in the cluster 2
+- Subscription from cluster 2, pull the Deployments, PODS and Secrets from the Channel and  deploy in the cluster 2
+- The deployment, Pods and Secrets available in the Cluster 2 was wraped with Deployables and placed in Namespace at MCM Hub.
 
 -------------
 
