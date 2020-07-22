@@ -6,7 +6,7 @@ Also it contains sample application deployment scripts for the Channel types Nam
 
 The content is made based on the Multicloud Management Version 1.3.x
 
-## Overview
+## 1. Overview
 
 MCM provides lightweight application management capabilities through custom resource definitions in Kubernetes.
 
@@ -22,7 +22,7 @@ Using this resources you can define your application and install it in MCM Hub c
 <img src="images/01-cluster.png">
 
 
-## Application Resources
+## 2. Application Resources
 
 ### 1. Channel
 
@@ -65,7 +65,7 @@ For grouping application components such as channel, subscription, placement rul
 
 -------------
 
-## Application resource interactions and lifecycle
+## 3. Application resource interactions and lifecycle
 
 <img src="images/21-app-resources.png">
 
@@ -81,7 +81,7 @@ For grouping application components such as channel, subscription, placement rul
 
 -------------
 
-## Application Resources – Subscription Propagation
+## 4. Application Resources – Subscription Propagation
 
 <img src="images/31-app-subscription.png">
 
@@ -91,7 +91,7 @@ For grouping application components such as channel, subscription, placement rul
 
 -------------
 
-## Sample Yaml files
+## 5. Sample Yaml files
 
 ### 1. Channel
 
@@ -121,7 +121,7 @@ Here is how these files are linked.
 
 -------------
 
-## Other Deployment Models
+## 6. Other Deployment Models
 
 ### Deploy by using channels, subscriptions, and placement rules
 
@@ -138,7 +138,7 @@ Here is how these files are linked.
 
 -------------
 
-## App toplogy
+## 7. App toplogy
 
 Once the app is deployed in MCM, here is how the App toplogy looks like at MCM Hub.
 
@@ -147,7 +147,7 @@ Once the app is deployed in MCM, here is how the App toplogy looks like at MCM H
 
 -------------
 
-## Sample scripts for different Channel Types
+## 8. Sample scripts for different Channel Types
 
 ### Channel Type : Namespace
 https://github.com/GandhiCloudLab/mcm-namespace-sample
