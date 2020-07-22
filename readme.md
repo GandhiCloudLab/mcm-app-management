@@ -147,7 +147,7 @@ Once the app is deployed in MCM, here is how the App toplogy looks like at MCM H
 
 -------------
 
-## 8. Sample scripts for different Channel Types
+## 8. Sample App scripts for different Channel Types
 
 ### Channel Type : Namespace
 https://github.com/GandhiCloudLab/mcm-namespace-sample
